@@ -1,0 +1,35 @@
+<div class="game">
+  <div class="wrap-list" *ngIf="islearning">
+    <div class="list list01">
+      <div class="wrap-item" *ngFor="let data of listData" 
+      [ngClass]="{'hidden' : listHidden.includes(data.id), 'selected' : selected.id === data.id } ">
+        <span class="jp">{{data.valueJP}}</span> 
+        <div>
+          <span class="han">{{data.valueHan}}</span>
+          <span class="vn">{{data.valueVN}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="!islearning">
+    <div class="list-block answer">
+      <div *ngFor="let data of listData"
+      [ngClass]="{'selected' : selected.id === data.id, 
+      'hidden': checkHidden(listAnswerDisable, data.id), 
+      'animate-wrong': selected.id === data.id && animateWrong,
+      'show-result' : (dataQuestion.id === data.id && showResult) } ">
+        <p>{{data.valueHan}}</p>
+        <p *ngIf="checkHidden(listAnswerDisable, data.id) ">{{data.valueJP}}</p>
+      </div>
+    </div>
+
+    <div class="list-block action">
+      <div *ngFor="let data of listDataSort"
+      [ngClass]="{'selected' : dataQuestion.id === data.id, 'hidden': checkHidden(listQuestionDisable, data.id) } ">
+        <p>{{data.valueJP}}</p>
+      </div>
+    </div>
+  </div>
+</div>

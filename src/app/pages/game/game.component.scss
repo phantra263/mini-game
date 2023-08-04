@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Noto+Serif+JP:wght@500&family=Taviraj:wght@300&display=swap');
+.hidden {
+  // visibility: hidden;
+  background: gray !important;
+}
+.game {
+  .wrap-list {
+    margin: auto;
+    padding: 20px;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    .wrap-item {
+      width: 9vw;
+      height: 9vw;
+      padding: 8px;
+      margin: auto 2px;
+      border-radius: 10px;
+      background: #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      &.selected {
+        background: #17c4d2;
+      }
+      div {
+        text-align: right;
+      }
+      span {
+        display: block;
+        font-size: 20px;
+        &.jp {
+          font-family: 'Noto Serif JP', serif;
+          color: #1b02ff;
+          font-weight: bold;
+          margin-bottom: 25px;
+        }
+        &.han {
+          font-family: 'Be Vietnam Pro', sans-serif;
+          font-weight: bolder;
+          font-size: 18px;
+        }
+        &.vn {
+          font-family: 'Taviraj', serif;
+          font-size: 15px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+.list-block {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  > div {
+    padding: 10px;
+    margin: 3px;
+    background: #eee;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  &.answer {
+    div {
+      &.selected {
+        background: red;
+      }
+      &.show-result {
+        background: green;
+      }
+      &.animate-wrong {
+        background: #17c4d2;
+        animation: changeBg 2s forwards;
+      }
+    }
+  }
+
+  &.action {
+    div {
+      &.selected {
+        background: #17c4d2;
+      }
+    }
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    background: red;
+  }
+  50% {
+    background: #17c4d2;
+  }
+  to {
+    background: gray !important;
+  }
+}

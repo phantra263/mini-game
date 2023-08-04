@@ -1,0 +1,19 @@
+[
+    { "id": "b", "valueVN": "valueVN2", "valueJP": "類", "valueHan": "THỌ" },
+    { "id": "r", "valueVN": "valueVN17", "valueJP": "利", "valueHan": "CHUC" },
+    { "id": "a", "valueVN": "valueVN1", "valueJP": "人", "valueHan": "NHÂN" },
+    { "id": "e", "valueVN": "valueVN5", "valueJP": "の", "valueHan": "CHUC" },
+    { "id": "d", "valueVN": "valueVN4", "valueJP": "会", "valueHan": "ĐỨC" },
+    { "id": "i", "valueVN": "valueVN9", "valueJP": "の", "valueHan": "CHUC" },
+    { "id": "o", "valueVN": "valueVN14", "valueJP": "固", "valueHan": "CHUC" },
+    { "id": "f", "valueVN": "valueVN6", "valueJP": "す", "valueHan": "CHUC" },
+    { "id": "q", "valueVN": "valueVN16", "valueJP": "承", "valueHan": "CHUC" },
+    { "id": "c", "valueVN": "valueVN3", "valueJP": "社", "valueHan": "TÂM" },
+    { "id": "g", "valueVN": "valueVN7", "valueJP": "べ", "valueHan": "CHUC" },
+    { "id": "k", "valueVN": "valueVN10", "valueJP": "構", "valueHan": "CHUC" },
+    { "id": "p", "valueVN": "valueVN15", "valueJP": "認", "valueHan": "CHUC" },
+    { "id": "h", "valueVN": "valueVN8", "valueJP": "て", "valueHan": "CHUC" },
+    { "id": "l", "valueVN": "valueVN11", "valueJP": "成", "valueHan": "CHUC" },
+    { "id": "n", "valueVN": "valueVN13", "valueJP": "の", "valueHan": "CHUC" },
+    { "id": "m", "valueVN": "valueVN12", "valueJP": "員", "valueHan": "CHUC" }
+  ]

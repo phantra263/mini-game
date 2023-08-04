@@ -1,0 +1,20 @@
+
+<button nz-button nzType="default" nzDanger (click)="random()">chọn random</button>
+
+<button nz-button nzType="primary" (click)="showResult()">Kết quả</button>
+<button nz-button nzType="primary" nzDanger (click)="compareAnswer()">Check</button>
+
+<div class="control">
+  <table>
+    <tr *ngFor="let data of listData; let i = index" [ngClass]="data.id === dataSelect.id ? 'active' : ''">
+      <td width="50px" style="text-align: center;">{{i + 1}}</td>
+      <td>{{data.valueVN}}</td>
+      <td>{{data.valueJP}}</td>
+      <td width="350px">
+        <div class="action">
+          <button (click)="checkSelect(data)" [ngClass]="data.id === dataSelect.id ? 'active' : ''">Chọn</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
